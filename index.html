@@ -4,132 +4,154 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>이상민 | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
-
 <body>
-  <main class="container">
-    <!-- Header -->
-    <header class="header">
-      <h1 class="name">이상민</h1>
-      <p class="title">AI · Backend 중심의 문제 해결형 개발자</p>
-      <p class="contact">
-        <a href="mailto:simon882@g.skku.edu">simon882@g.skku.edu</a>
-        <span class="divider">·</span>
-        <a href="https://github.com/ChocolateStrawberryYumYum" target="_blank">GitHub</a>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>
+        반갑습니다,<br />
+        <span class="highlight">이상민</span>입니다.
+      </h1>
+      <p class="hero-desc">
+        AI와 백엔드를 중심으로<br />
+        비즈니스 문제를 기술로 풀어내는 개발자입니다.
       </p>
-    </header>
+    </div>
+  </section>
 
-    <!-- About -->
-    <section>
-      <h2>About</h2>
-      <p>
-        저는 기능 구현보다 <strong>왜 이 기능이 필요한지</strong>를 먼저 고민하는 개발자입니다.
-        막연한 인상이나 추측 대신, 데이터를 기준으로 문제를 정의하고
-        사용자의 의사결정에 실제로 도움이 되는 구조를 만드는 데 관심이 있습니다.
-        작은 프로젝트라도 끝까지 개선하며 완성도를 높이는 과정을 중요하게 생각합니다.
-      </p>
-    </section>
+  <!-- ABOUT -->
+  <section class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="about-text">
+      단순히 “기술을 사용하는 개발자”가 아니라,<br />
+      <strong>왜 이 문제가 중요한지</strong>를 먼저 고민하고
+      그에 맞는 기술을 선택하는 개발자가 되고자 합니다.<br /><br />
 
-    <!-- Skills -->
-    <section>
-      <h2>Skills</h2>
-      <ul class="list">
-        <li><strong>Languages</strong> · Python, JavaScript</li>
-        <li><strong>Backend / Web</strong> · Django, FastAPI, HTML/CSS, Next.js</li>
-        <li><strong>AI / Data</strong> · Machine Learning, Deep Learning, RAG, LangChain, AI Agent</li>
-        <li><strong>Infra / Tools</strong> · Docker, AWS, Git, Web Crawling</li>
-      </ul>
-    </section>
+      데이터 분석, 머신러닝, LLM 기반 서비스 개발 경험을 바탕으로
+      실제 사용자에게 가치를 전달하는 서비스를 만드는 데 관심이 많습니다.
+    </p>
+  </section>
 
-    <!-- Projects -->
-    <section>
-      <h2>Projects</h2>
+  <!-- SKILLS -->
+  <section class="section gray">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box">Python</div>
+      <div class="skill-box">FastAPI / Django</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">React</div>
+      <div class="skill-box">LangChain · RAG</div>
+      <div class="skill-box">Vector DB</div>
+      <div class="skill-box">Docker · AWS</div>
+    </div>
+  </section>
 
-      <!-- SCENTENCE -->
-      <div class="item">
-        <div class="item-header">
-          <span class="item-title">SCENTENCE</span>
-          <span class="item-date">2025.12 – 2026.02</span>
-        </div>
-        <p class="item-desc">
-          향수 데이터와 사용자 취향을 결합한 개인화 향수 추천 AI 플랫폼입니다.
-          자연어 질문을 이해해 향수를 추천하는 RAG 기반 시스템을 구현했으며,
-          FastAPI 기반 MSA 구조로 백엔드 아키텍처를 설계했습니다.
-          대규모 리뷰 데이터 수집·정제·임베딩 파이프라인과
-          Docker·AWS 배포 환경까지 전반적인 시스템 구성을 담당했습니다.
-        </p>
-        <p class="item-links">
+  <!-- PROJECTS -->
+  <section class="section">
+    <h2 class="section-title">Projects</h2>
+
+    <!-- SCENTENCE -->
+    <div class="project-row">
+      <div class="project-left">
+        <h3>SCENTENCE</h3>
+        <span class="project-period">2025.12 – 2026.02</span>
+        <div class="project-links">
           <a href="https://scentence.kro.kr/" target="_blank">Service</a>
-          <span class="divider">·</span>
           <a href="https://github.com/Scentence" target="_blank">GitHub</a>
-        </p>
+        </div>
       </div>
 
-      <!-- Planny -->
-      <div class="item">
-        <div class="item-header">
-          <span class="item-title">Planny</span>
-          <span class="item-date">2025.11 – 2025.12</span>
-        </div>
-        <p class="item-desc">
-          ‘플랜테리어’에 초점을 둔 AI 기반 식물 추천·상담 서비스입니다.
-          추천 → 이미지 시각화 → 관리 상담을 하나의 흐름으로 설계해
-          구매 전·후 경험을 통합했습니다.
-          사용자의 공간과 성향을 반영한 추천과 AI 이미지 생성을 통해
-          선택 부담을 줄이고, 구매 이후 관리 불안을 해소하는 데 집중했습니다.
+      <div class="project-right">
+        <h4>Description.</h4>
+        <p>
+          사용자 질문을 자연어로 이해하고,
+          상황·감성·취향에 맞는 향수를 추천하는 AI 기반 서비스입니다.
         </p>
-        <p class="item-links">
+
+        <h4>What did I do.</h4>
+        <ul>
+          <li>FastAPI 기반 백엔드 및 API 설계</li>
+          <li>LangChain + Vector DB 기반 RAG 파이프라인 구축</li>
+          <li>향수 리뷰 데이터 수집·정제·임베딩 자동화</li>
+          <li>Docker · AWS 기반 서비스 배포</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Planny -->
+    <div class="project-row">
+      <div class="project-left">
+        <h3>Planny</h3>
+        <span class="project-period">2025.11 – 2025.12</span>
+        <div class="project-links">
           <a href="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN19-4th-5Team" target="_blank">
             GitHub
           </a>
-        </p>
+        </div>
       </div>
 
-      <!-- 서울시 폐업률 -->
-      <div class="item">
-        <div class="item-header">
-          <span class="item-title">서울시 자치구별 매장 폐업률 예측</span>
-          <span class="item-date">2026.09 – 2026.10</span>
-        </div>
-        <p class="item-desc">
-          서울시 상권·인구·매장 데이터를 결합해 자치구별 폐업률 예측 구조를 설계했습니다.
-          공공데이터 수집과 정제 후, 지역 특성과 폐업률 간의 관계를 분석하고
-          XGBoost 모델을 중심으로 예측 성능과 안정성을 검증했습니다.
-          예측 결과를 시각화해 사용자가 직관적으로 이해할 수 있도록 구성했습니다.
+      <div class="project-right">
+        <h4>Description.</h4>
+        <p>
+          사용자의 공간과 취향을 고려해 식물을 추천하고,
+          관리까지 이어지는 플랜테리어 AI 서비스입니다.
         </p>
-        <p class="item-links">
+
+        <h4>What did I do.</h4>
+        <ul>
+          <li>추천 로직 설계 및 사용자 시나리오 정의</li>
+          <li>AI 이미지 생성 기반 배치 시각화</li>
+          <li>식물 관리 Q&A 챗봇 기획</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 서울시 폐업률 -->
+    <div class="project-row">
+      <div class="project-left">
+        <h3>서울시 자치구별 매장 폐업률 예측</h3>
+        <span class="project-period">2025.10</span>
+        <div class="project-links">
           <a href="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN19-2nd-1Team" target="_blank">
             GitHub
           </a>
-        </p>
-      </div>
-
-      <!-- 전기차 화재 -->
-      <div class="item">
-        <div class="item-header">
-          <span class="item-title">전기차 화재 발생률 분석 및 배터리 안전 FAQ</span>
-          <span class="item-date">2025.09</span>
         </div>
-        <p class="item-desc">
-          전기차 화재에 대한 막연한 불안을 데이터로 검증하기 위해,
-          차량 등록 대수 대비 화재 발생률이라는 기준을 정의해 분석했습니다.
-          전기차와 내연기관차를 비교하고 연도별 추이를 시각화했으며,
-          분산된 정부·기업 지침을 FAQ 형태로 재구성해
-          근거 기반으로 판단할 수 있는 정보 구조를 만들었습니다.
-        </p>
-        <p class="item-links">
-          <a href="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN19-1st-4Team" target="_blank">
-            GitHub
-          </a>
-        </p>
       </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      © 2026 이상민
-    </footer>
-  </main>
+      <div class="project-right">
+        <h4>Description.</h4>
+        <p>
+          서울시 공공데이터를 기반으로 상권 특성과 폐업률을 분석하고
+          예측 모델을 구축한 데이터 분석 프로젝트입니다.
+        </p>
+
+        <h4>What did I do.</h4>
+        <ul>
+          <li>데이터 수집 및 전처리</li>
+          <li>XGBoost / TabNet 모델 실험</li>
+          <li>Streamlit 기반 시각화</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section gray">
+    <h2 class="section-title">Contact</h2>
+    <p class="contact-text">
+      📧 simon882@naver.com<br />
+      🌐 github.com/ChocolateStrawberryYumYum
+    </p>
+  </section>
+
+  <footer>
+    © 2026 이상민
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
